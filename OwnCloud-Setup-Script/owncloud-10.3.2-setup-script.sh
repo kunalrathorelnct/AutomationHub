@@ -126,7 +126,7 @@ function setting_webserver
 		echo "Error: Failed to add firewall rule"
 	fi
 	echo "Status: OwnCloud Setup Completed"
-	echo "Status: Open url "$ipaddress"/owncloud"
+	echo "Status: Open url http://"$ipaddress"/owncloud"
 	echo -e "Passwords:\nMariadb root password: owncloud\nMariadb owncloud user password: owncloud\nOwncloud Portal admin user password: password"
 }
 function download_owncloud
