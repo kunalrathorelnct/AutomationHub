@@ -49,7 +49,7 @@ function add_test_user
 function add_base_schema
 {
 	echo -e "dn: dc="$(echo $domain | cut -d '.' -f1)",dc="$(echo $domain | cut -d '.' -f2)"
-dc: example
+dc: "$(echo $domain | cut -d '.' -f1)"
 objectClass: top
 objectClass: domain\n
 dn: cn=Manager,dc="$(echo $domain | cut -d '.' -f1)",dc="$(echo $domain | cut -d '.' -f2)"
